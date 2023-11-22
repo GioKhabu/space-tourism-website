@@ -1,0 +1,65 @@
+.HomeInfoWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  z-index: 4;
+  left: 1px;
+  bottom: 431px;
+}
+
+.HomeInfoBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 450px;
+  min-height: 380px;
+  height: auto;
+}
+
+.HomeInfoBlock > h1 {
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  color: #d0d6f9;
+}
+
+.HomeInfoBlock > h2 {
+  margin: 0;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
+  color: #ffff;
+}
+
+.HomeInfoBlock > h3 {
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  color: #d0d6f9;
+  line-height: 1.5;
+}
+
+.HomeInfoWrapper > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 274px;
+  height: 274px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 0px solid #fff;
+  background-color: #fff;
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: #0B0D17;
+}
