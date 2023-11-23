@@ -1,0 +1,71 @@
+.MenuHamburger {
+    z-index: 7;
+}
+
+.MenuCheckBox {
+  display: none;
+}
+
+.MenuCheckBoxLabel {
+  position: absolute;
+  top: 65%;
+  right: -50%;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: -30px auto 0 auto;
+  cursor: pointer;
+  z-index: 6;
+}
+
+
+.MenuCheckBoxLabel div {
+  position: relative;
+  top: 0;
+  height: 3px;
+  background-color: #D0D6F9;
+  margin-bottom: 7.5px;
+  transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
+}
+
+.MenuCheckBoxLabel div:first-child {
+  transform-origin: 0;
+}
+
+.MenuCheckBoxLabel div:last-child {
+  margin-bottom: 0;
+  transform-origin: 60px;
+}
+
+.MenuCheckBoxLabel div:nth-child(2) {
+  right: 0;
+  width: 24px;
+}
+
+.MenuCheckBox:checked + .MenuCheckBoxLabel div:first-child {
+  width: 13px;
+  right: -3px;
+  top: 2px;
+  transform: rotateZ(45deg);
+}
+
+.MenuCheckBox:checked + .MenuCheckBoxLabel div:last-child {
+  width: 13px;
+  right: 7px;
+  top: 31px;
+  transform: rotateZ(45deg);
+}
+
+.MenuCheckBox:checked + .MenuCheckBoxLabel div:nth-child(2) {
+  width: 24px;
+  top: 0;
+  right: 1px;
+  transform: rotateZ(-45deg);
+}
+
+@media (min-width: 440px) {
+  .MenuHamburger {
+    display: none;
+}
+}

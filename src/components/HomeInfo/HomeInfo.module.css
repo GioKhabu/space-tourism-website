@@ -4,17 +4,19 @@
   align-items: flex-end;
   width: 100vw;
   height: auto;
-  position: relative;
-  z-index: 4;
+  position: absolute;
   left: 1px;
-  bottom: 431px;
+  top: 331px;
+  overflow-x: hidden;
+  z-index: 0;
 }
 
 .HomeInfoBlock {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
   justify-content: flex-end;
-  width: 450px;
+  max-width: 450px;
   min-height: 380px;
   height: auto;
 }
@@ -61,5 +63,86 @@
   font-size: 32px;
   letter-spacing: 2px;
   font-weight: 100;
-  color: #0B0D17;
+  color: #0b0d17;
+}
+
+@media (max-width: 768px) {
+  .HomeInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    left: 1px;
+    top: 72px;
+  }
+  .HomeInfoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 450px;
+    min-height: 380px;
+    height: auto;
+  }
+
+  .HomeInfoBlock > h1 {
+    font-size: 20px;
+  }
+
+  .HomeInfoBlock > h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .HomeInfoWrapper > button {
+    width: 242px;
+    height: 242px;
+    margin-right: 0;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .HomeInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    z-index: 1;
+    left: 1px;
+    top: 142px;
+  }
+  .HomeInfoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 327px;
+    min-height: 276px;
+    height: auto;
+  }
+
+  .HomeInfoBlock > h1 {
+    font-size: 20px;
+  }
+
+    .HomeInfoBlock > h2 {
+    font-size: 80px;
+  }
+
+  .HomeInfoBlock > h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .HomeInfoWrapper > button {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-top: 81px;
+    margin-bottom: auto;
+    font-size: 20px;
+  }
 }

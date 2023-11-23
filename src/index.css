@@ -9,8 +9,7 @@ body {
   color: #ffff;
   width: 100vw;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -19,7 +18,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-h1 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Bellefair', serif;
-}
