@@ -6,12 +6,12 @@ import Logo from '../../assets/shared/logo.svg';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import NavLinks from '../NavLinks/NavLinks';
 import { HamburgerMenueContext } from '../../context/HamburgerMenu.context';
+import { WindowSizeContext } from '../../context/WindowSize.context.js';
+import {getWindowSize} from '../../assets/utils.js'
 
 function Navigation() {
-  const [windowSize, setWindowSize] = React.useState(getWindowSize());
-  const [navbarSize, setNavbarSize] = React.useState(0);
-  const [navbarBackgroundSize, setNavbarBackgroundSize] = React.useState(0);
   const { hamMenue } = React.useContext(HamburgerMenueContext);
+  const {windowSize, setWindowSize, navbarSize, setNavbarSize,navbarBackgroundSize, setNavbarBackgroundSize} = React.useContext(WindowSizeContext)
   React.useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -29,7 +29,8 @@ function Navigation() {
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
-  }, [windowSize.innerWidth]);
+  }, [windowSize.innerWidth, setNavbarBackgroundSize, setWindowSize, setNavbarSize]);
+
   return (
     <Fragment>
       <header className={`${styles.Navigation}`}>
@@ -49,9 +50,6 @@ function Navigation() {
   );
 }
 
-function getWindowSize() {
-  const { innerWidth } = window;
-  return { innerWidth };
-}
+
 
 export default Navigation;

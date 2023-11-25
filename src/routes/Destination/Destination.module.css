@@ -1,0 +1,107 @@
+.DestinationWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  margin: 0;
+}
+
+.Destination {
+  background-image: url('../../assets/destination/background-destination-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+main > h1 {
+  position: absolute;
+  margin: 0;
+  margin-top: 212px;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 4.72px;
+  color: #ffff;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+main > h1 > span {
+  margin-right: 28px;
+  opacity: 0.4;
+  font-weight: 700;
+}
+
+.DestinationBack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DestinationGroup {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1247px;
+  min-width: 1000px;
+  margin-top: 310px;
+}
+
+.DestinationGroup > img {
+  width: 445px;
+  height: 445px;
+}
+
+.DestinationInfoBack {
+  max-width: 445px;
+}
+
+@media (max-width: 1050px) {
+  .Destination {
+    background-image: url('../../assets/destination/background-destination-tablet.jpg');
+  }
+  main > h1 {
+    position: absolute;
+    margin: 0;
+    margin-top: 136px;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 4.72px;
+    color: #ffff;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .DestinationGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1247px;
+    min-width: 1000px;
+    margin-top: 310px;
+  }
+  .DestinationInfoBack {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    max-width: 400px;
+    height: 400px;
+  }
+  .DestinationGroup > img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 23px;
+  }
+}
+
+@media (max-width: 440px) {
+  .Destination {
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+  }
+}

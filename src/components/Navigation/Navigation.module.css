@@ -5,10 +5,9 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 99.8vw;
+  width: 99.9vw;
   height: 96px;
   z-index: 2;
-  overflow: hidden;
 }
 
 .Navigation > img {
@@ -35,7 +34,7 @@
   z-index: 2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .Navigation {
     margin-top: 1px;
   }
