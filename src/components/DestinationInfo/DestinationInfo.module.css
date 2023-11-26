@@ -8,7 +8,7 @@
 .DestinationInfoWrapper > h2 {
   margin: 0;
   font-family: 'Bellefair', serif;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 32px;
   font-size: 100px;
   color: #ffff;
@@ -129,17 +129,17 @@
     margin-bottom: 32px;
   }
   .DestinationDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-}
-.DestinationInfoWrapper > hr {
-  margin-bottom: 32px;
-}
-.Distance {
-  margin-bottom: 32px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+  .DestinationInfoWrapper > hr {
+    margin-bottom: 32px;
+  }
+  .Distance {
+    margin-bottom: 32px;
+  }
 }
