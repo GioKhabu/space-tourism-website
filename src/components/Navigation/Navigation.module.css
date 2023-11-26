@@ -5,10 +5,10 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 99.9vw;
+  width: 99.999vw;
   height: 96px;
   z-index: 2;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Navigation > img {
