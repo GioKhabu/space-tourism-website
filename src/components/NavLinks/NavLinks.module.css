@@ -12,7 +12,7 @@
 .NavBackground {
   position: absolute;
   background: transparent;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(70px);
   height: 100%;
   z-index: 3;
   margin-right: -40px;

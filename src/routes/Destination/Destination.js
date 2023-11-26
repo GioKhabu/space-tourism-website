@@ -11,7 +11,7 @@ function Destination() {
   const param = useParams()
 
   const DestinationData = Object.values(data.destinations).filter((item) => {
-    return item.name === param.id;
+    return String(item.name).toLocaleLowerCase() === param.id;
   });
   const [destinations] = DestinationData;
   let imageURL = String(param.id).toLowerCase();
