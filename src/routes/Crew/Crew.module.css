@@ -1,0 +1,167 @@
+.CrewWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  margin: 0;
+}
+
+.Crew {
+  background-image: url('../../assets/crew/background-crew-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Crew > h1 {
+  position: absolute;
+  margin: 0;
+  margin-top: 212px;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 4.72px;
+  color: #ffff;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.Crew > h1 > span {
+  margin-right: 28px;
+  opacity: 0.4;
+  font-weight: 700;
+}
+
+.CrewBack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.CrewGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1247px;
+  min-width: 1000px;
+}
+
+.CrewImage > img {
+  max-width: 568px;
+  max-height: 712px;
+}
+
+.CrewImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.CrewImage > hr {
+  display: none;
+  width: 100%;
+  height: 1px;
+  background-color: #ffff;
+  opacity: 0.5;
+  border: none;
+  opacity: 0.6;
+}
+
+.CrewInfoBack {
+  max-width: 510px;
+  margin-right: 2rem;
+  margin-left: 1em;
+}
+
+@media (max-width: 1050px) {
+  .Crew {
+    background-image: url('../../assets/crew/background-crew-tablet.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Crew > h1 {
+    margin-top: 136px;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+  }
+  .CrewBack {
+    padding-top: 0;
+    margin-top: 220px;
+  }
+  .CrewGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+  }
+  .CrewInfoBack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 573px;
+    height: auto;
+    overflow: hidden;
+  }
+  .CrewImage > img {
+    max-width: 456px;
+    max-height: 572px;
+  }
+}
+
+@media (max-width: 440px) {
+  .Crew {
+    background-image: url('../../assets/crew/background-crew-mobile.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Crew > h1 {
+    margin-top: 88px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .CrewBack {
+    padding-top: 139px;
+    margin-top: 0;
+  }
+
+  .CrewInfoBack {
+    height: auto;
+  }
+  .CrewGroup {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+  }
+  .CrewImage > hr {
+    display: inline-block;
+    width: 80%;
+    height: 1px;
+    background-color: #ffff;
+    opacity: 0.5;
+    border: none;
+    opacity: 0.3;
+    margin: 0;
+  }
+  .CrewImage > img {
+    max-width: 327px;
+    max-height: 223px;
+    margin-bottom: 0;
+  }
+}

@@ -3,7 +3,7 @@ import data from '../../assets/data.json';
 import { Link } from 'react-router-dom';
 import styles from './DestinationNavigation.module.css';
 
-function DestinationNavigation({ params }) {
+function DestinationNavigation() {
   const id = React.useId();
 
   return (

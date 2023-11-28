@@ -1,0 +1,87 @@
+.CrewInfoWrapper {
+  height: auto;
+}
+
+.CrewInfoGroup {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.CrewInfoGroup > h2 {
+  margin: 0;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffff;
+  opacity: 0.5;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.CrewInfoGroup > h3 {
+  margin: 0;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 56px;
+  color: #ffff;
+  margin-bottom: 27px;
+  text-transform: uppercase;
+}
+
+.CrewInfoGroup > p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin-bottom: 54px;
+}
+
+
+
+
+@media (max-width: 1050px) {
+  .CrewInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 460px;
+  }
+  .CrewInfoGroup > h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+    .CrewInfoGroup > h3 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .CrewInfoGroup > p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  .CrewInfoWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .CrewInfoWrapper > h2 {
+    font-size: 56px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  .CrewInfoWrapper > p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,31 @@
+.CrewNavigationWrapper {
+  min-width: 132px;
+  height: 15px;
+  display: flex;
+  margin-left: -12px;
+}
+
+.CrewNavLinks {
+  height: 15px;
+  width: 15px;
+  margin: 0 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 1050px) {
+  .CrewNavigationWrapper {
+    margin-bottom: 32px;
+    max-width: 285px;
+  }
+}
+
+@media (max-width: 440px) {
+  .CrewNavigationWrapper {
+    margin-bottom: 20px;
+  }
+  .CrewNavLinks {
+    height: 10px;
+    width: 10px;
+  }
+}
