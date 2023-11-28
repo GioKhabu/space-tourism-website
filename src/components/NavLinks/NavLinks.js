@@ -17,7 +17,7 @@ function NavLinks({ navbarBackgroundSize }) {
         <Link className={`${styles.NavLink}`} to={`/crew/${data.crew[0].name}`}>
           <span>02</span> CREW
         </Link>
-        <Link className={`${styles.NavLink}`}>
+        <Link className={`${styles.NavLink}`} to={`/technology/${data.technology[0].name}`}>
           <span>03</span> TECHNOLOGY
         </Link>
       </div>
