@@ -27,6 +27,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./public/images/Main_Desctop.JPG)
+![](./public/images/Destination_Desctop.JPG)
+![](./public/images/Destination_Tablet.JPG)
+![](./public/images/Destination_Mobile.JPG)
+![](./public/images/Destination_Mobile_Menu.JPG)
+![](./public/images/Crew_Desctop.JPG)
+![](./public/images/Technology_Desctop.JPG)
 
 ### Links
 

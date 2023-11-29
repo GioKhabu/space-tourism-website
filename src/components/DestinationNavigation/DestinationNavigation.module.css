@@ -18,6 +18,16 @@
   text-transform: uppercase;
 }
 
+.DestinationNavLinksActive {
+  padding-bottom: 0;
+  border-bottom: 3px solid #fff;
+}
+
+.DestinationNavLinks:hover {
+  padding-bottom: 0;
+  border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+}
+
 @media (max-width: 1050px) {
   .DestinationNavigationWrapper {
     margin-bottom: 32px;

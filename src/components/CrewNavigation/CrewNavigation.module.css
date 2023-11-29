@@ -11,6 +11,16 @@
   margin: 0 12px;
   background-color: #fff;
   border-radius: 50%;
+  opacity: 0.3;
+}
+
+.CrewNavLinksActive {
+  opacity: 1;
+}
+
+
+.CrewNavLinks:hover {
+    opacity: 0.5;
 }
 
 @media (max-width: 1050px) {

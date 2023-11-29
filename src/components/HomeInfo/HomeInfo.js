@@ -14,7 +14,9 @@ function HomeInfo() {
           truly out of this world experience!
         </h3>
       </article>
-      <button>EXPLORE</button>
+      <div className={`${styles.ButtonWrapper}`}>
+        <button>EXPLORE</button>
+      </div>
     </div>
   );
 }

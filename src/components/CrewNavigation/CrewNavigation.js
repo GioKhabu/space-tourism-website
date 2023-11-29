@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../../assets/data.json';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './CrewNavigation.module.css';
 
 function CrewNavigation() {
@@ -9,11 +9,15 @@ function CrewNavigation() {
     <nav className={`${styles.CrewNavigationWrapper}`}>
       {Object.values(data.crew).map((item, index) => {
         return (
-          <Link
-            className={`${styles.CrewNavLinks}`}
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? `${styles.CrewNavLinks} ${styles.CrewNavLinksActive}`
+                : `${styles.CrewNavLinks}`
+            }
             to={`/crew/${item.name}`}
             key={`${index}-${id}`}
-          ></Link>
+          ></NavLink>
         );
       })}
     </nav>

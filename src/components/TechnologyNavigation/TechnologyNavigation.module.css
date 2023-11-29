@@ -16,12 +16,24 @@
   height: 80px;
   width: 80px;
   margin: 16px 0px;
-  background-color: #fff;
   border-radius: 50%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 100;
   font-size: 32px;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.TechnologyNavLinksActive {
   color: #0b0d17;
+  background-color: #fff;
+  border: 1px solid rgb((255, 255, 255, 1));
+}
+
+.TechnologyNavLinks:hover {
+  color: #fff;
+  background-color:inherit;
+  border: 1px solid rgb(255, 255, 255, 1);
 }
 
 @media (max-width: 1050px) {
@@ -31,7 +43,6 @@
     flex-direction: row;
     min-height: auto;
     margin-bottom: 44px;
-
   }
   .TechnologyNavLinks {
     height: 60px;
@@ -45,12 +56,11 @@
 @media (max-width: 440px) {
   .TechnologyNavigationWrapper {
     margin: 0;
-    max-width: 155px;
+    max-width: 175px;
     margin-left: -8px;
     flex-direction: row;
     min-height: auto;
     margin-bottom: 26px;
-
   }
   .TechnologyNavLinks {
     height: 40px;
